@@ -1,0 +1,275 @@
+/* Bài 1 */
+.game-report {
+  font-family: Arial, sans-serif;
+}
+.game-results li {
+  display: inline-block;
+  width: 235px;
+  margin: 8px;
+  vertical-align: top;
+}
+.game-results img {
+  display: block;
+  width: 100%;
+}
+
+/* Bài 2 */
+.text-page {
+  background-image: url("assets/bit-logo.png");
+  background-size: 30px auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.text-examples {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+}
+.ueh {
+  color: blue;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.faculty {
+  color: rgba(255, 0, 0, 0.5);
+  text-align: right;
+  font-style: italic;
+  border: 3px dotted yellow;
+  border-radius: 10px;
+  background: gray;
+  font-size: 15px;
+  padding: 10px;
+}
+.bit {
+  display: inline-block;
+  padding: 12px;
+  color: #c8ed74;
+  font: bold 36px Arial, sans-serif;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px darkred, 0 0 10px red, 0 0 18px olive;
+}
+.overflow-examples > div {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+.overflow-examples h2 {
+  font-size: 16px;
+}
+.overflow-box {
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+  background: #eee;
+}
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Bài 4 */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+  width: 22%;
+  background: cyan;
+}
+.menu a {
+  display: block;
+  font-size: 28px;
+}
+
+/* Bài 5 */
+.best-shared {
+  max-width: 960px;
+  margin: 24px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.best-shared h2 {
+  font-size: 44px;
+  font-weight: normal;
+}
+.best-shared h2 strong {
+  color: #00ade2;
+}
+.btn-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+.btn-list li {
+  display: inline-block;
+  margin: 0 10px 10px;
+}
+.btn-list a {
+  display: inline-block;
+  width: 170px;
+  padding: 16px 0;
+  border-radius: 4px;
+  background: #292e30;
+  color: white;
+  text-decoration: none;
+}
+
+/* Bài 6 */
+.portfolio {
+  max-width: 1120px;
+  margin: 20px auto;
+  padding: 15px 0;
+  text-align: center;
+  background: #f6f6f6;
+  font-family: Arial, sans-serif;
+}
+.portfolio hr {
+  width: 70px;
+  border: 0;
+  border-top: 2px solid #2f968e;
+}
+.list-tab, .gallery {
+  list-style: none;
+  padding: 0;
+}
+.list-tab {
+  margin: 25px 0 35px;
+}
+.list-tab li {
+  display: inline-block;
+  margin: 5px 8px;
+}
+.list-tab a {
+  color: #555;
+  font-weight: bold;
+  text-decoration: none;
+}
+.list-tab a[aria-current], .list-tab a:hover {
+  color: #287b74;
+}
+.gallery li {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1% 16px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* Bài 7 */
+.layout-demo {
+  max-width: 360px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+#wrapper {
+  border: 2px solid black;
+  padding: 5px;
+}
+#wrapper header, #wrapper nav, #wrapper main, #wrapper footer {
+  border: 2px solid black;
+  padding: 6px;
+}
+#wrapper header {
+  height: 32px;
+  margin-bottom: 5px;
+}
+.layout-middle {
+  display: flex;
+  margin-bottom: 5px;
+}
+#wrapper nav {
+  width: 18%;
+  margin-right: 5px;
+}
+#wrapper main {
+  width: 82%;
+  min-height: 200px;
+}
+
+/* Bài 8 */
+.bat-family {
+  max-width: 1024px;
+  margin: 20px auto;
+  text-align: center;
+}
+.site-header {
+  margin-bottom: 38px;
+  padding: 14px 0;
+  background: #c9c9c9 url("assets/bat-symbol.png") no-repeat 32% center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.site-header h1 {
+  margin: 0;
+}
+.superheroes {
+  list-style: none;
+  padding: 0;
+}
+.superheroes li {
+  display: inline-block;
+  position: relative;
+  width: 17%;
+  vertical-align: middle;
+}
+.superheroes li:hover, .superheroes li:focus-within {
+  width: 20%;
+}
+.superheroes h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px 12px 0 0;
+  font-size: 16px;
+}
+.superheroes img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #555;
+  border-radius: 12px;
+}
+.read-more {
+  display: block;
+  opacity: 0;
+  width: 100%;
+  padding: 5px 0;
+  background: #555;
+  color: white;
+  text-decoration: none;
+}
+.superheroes li:hover .read-more, .superheroes li:focus-within .read-more {
+  opacity: 1;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .site-header {
+    background-image: none;
+  }
+  .superheroes li, .superheroes li:hover, .superheroes li:focus-within {
+    width: 140px;
+  }
+  .read-more {
+    opacity: 1;
+  }
+}
+
