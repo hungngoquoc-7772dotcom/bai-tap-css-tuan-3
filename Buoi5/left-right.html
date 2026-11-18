@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 2 – Left và Right</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Arial, sans-serif; }
+  header { padding: 12px; }
+  main { display: flex; }
+  .left, .right { min-height: 400px; padding: 12px; color: white; }
+  .left { width: 70%; background: blue; }
+  .right { width: 30%; background: red; }
+  picture img { display: block; max-width: 100%; height: auto; margin-top: 10px; }
+
+  @media screen and (max-width: 768px) {
+    main { display: block; }
+    .left, .right { width: 100%; }
+  }
+  @media screen and (max-width: 479px) {
+    .right { display: none; }
+  }
+  @media print {
+    header, .left { display: none; }
+    main { display: block; }
+    .right { width: 100%; min-height: 0; color: black; background: white; }
+  }
+</style>
+</head>
+<body>
+<header><a href="index.html">Về trang buổi 5</a></header>
+<main>
+  <section class="left">
+    LEFT
+    <picture>
+      <source media="(min-width: 800px)" srcset="assets/ueh-desktop.svg">
+      <source media="(min-width: 600px)" srcset="assets/ueh-tablet.svg">
+      <img src="assets/ueh-mobile.svg" alt="Hình minh họa UEH">
+    </picture>
+  </section>
+  <section class="right">RIGHT</section>
+</main>
+</body>
+</html>

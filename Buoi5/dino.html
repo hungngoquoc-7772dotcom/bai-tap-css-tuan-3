@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 1 – Chrome Dino</title>
+<style>body { font-family: Arial, sans-serif; margin: 20px; } pre { overflow-x: auto; background: #f3f3f3; padding: 10px; }</style>
+</head>
+<body>
+<a href="index.html">Về trang buổi 5</a>
+<h1>Bài 1: Chrome Dino</h1>
+<p>Nhập <code>chrome://dino</code> vào thanh địa chỉ Chrome. Mở DevTools bằng F12 rồi chọn Console.</p>
+<p>Lấy đối tượng trò chơi. Dòng dưới hỗ trợ cả Chrome đang dùng và bản cũ có <code>Runner.instance_</code>.</p>
+<pre>var dino = Runner.getInstance ? Runner.getInstance() : Runner.instance_;</pre>
+<h2>Đổi tốc độ chạy</h2>
+<pre>dino.setSpeed(20);
+dino.currentSpeed;</pre>
+<h2>Đổi vận tốc nhảy</h2>
+<pre>dino.tRex.setJumpVelocity(20);
+dino.tRex.config.initialJumpVelocity;</pre>
+<p>Giá trị đọc được là −20 vì nhân vật di chuyển lên trên. Quay lại cửa sổ trò chơi và nhấn phím Space để thử.</p>
+<h2>Thử tắt Game Over</h2>
+<pre>dino.gameOver = function () {};</pre>
+<p>Tải lại trang để khôi phục trò chơi ban đầu.</p>
+</body>
+</html>
